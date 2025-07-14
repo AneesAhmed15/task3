@@ -178,7 +178,7 @@ label::after {
 }
 
 .awardd:checked::after {
-    content: "dytdgc";
+    content: "";
     color: black;
     font-size: 10px;
     position: absolute;
