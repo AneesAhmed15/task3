@@ -1,106 +1,147 @@
-
 * {
     margin: 10px 0px;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "  Open Sans", sans-serif;
     background-color: white;
 }
+
 .card {
     background-color: #8b3030;
     position: relative;
 }
+
 p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
+    color: white;
     font-family: "  Open Sans", sans-serif;
 }
+
 h2 {
     font-size: 25px;
     font-weight: 400px;
     font-family: "  Open Sans", sans-serif;
+    color: black;
 }
+
 .card {
     display: flex;
-   
-    justify-content: center;
-        align-items: center;
-    margin-left: 20px;
-margin-bottom: 0px;}
 
-input,textarea {
-    background-color:#8b3030 ;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+input,
+textarea {
+    background-color: #8b3030;
     color: white;
-    border: 1px solid  white;
+    border: 1px solid white;
     font-family: "Open Sans", sans-serif;
 }
 
-input,textarea::placeholder{
+input,
+textarea::placeholder {
     color: grey;
 }
-.award1,.award2,.award3,.award4,.award5,.award6{
-    background-color:#8b3030;
+
+.award1,
+.award2,
+.award3,
+.award4,
+.award5,
+.award6 {
+    background-color: #8b3030;
 }
-.input-type{      display: flex;
+
+.input-type {
+    display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    margin-top: 110px;
+
 }
-button{
-    height: 40px;
-    width: 390px;
+
+button {
+    height: 58px;
+    width: 520px;
+    font-size: 25px;
 }
-label{
+
+label {
     color: aliceblue;
     font-size: 16px;
     position: relative;
-}  
-textarea::placeholder{
+}
+
+textarea::placeholder {
     color: rgb(255, 255, 255);
-}   
-::placeholder{
+}
+
+::placeholder {
     color: rgb(255, 255, 255);
 
 }
-.input-type input{
-width: 500px;
-height:40px;
-padding: 3px;
+
+.input-type input {
+    width: 592px;
+    height: 75px;
+    padding: 3px;
+
 
 }
+
 .text {
-    margin-right: 80px;
+    margin-right: 78px;
+    color: white;
+    margin-left: 120px;
 }
-textarea{
-    width: 500px;
-    height: 50px;
+
+textarea {
+    width: 592px;
+    height: 85px;
     padding: 5px;
 }
+
 .award {
     width: 600px;
 }
-pre{
+
+pre {
     position: relative;
     height: 50px;
     width: 500px;
     margin: 0;
 }
-pre::after{
-    content: "";
+
+pre::after {
+    content: "+";
+    color: rgb(245, 221, 221);
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
-    width: 1%;
-    height: 1%;
+    width: 20px;
+    height: 20px;
     background-color: white;
     bottom: 0;
     right: 0;
-    border: 10px solid white;
-    
+ 
+
 }
-label::after{
+
+label::after {
     position: absolute;
     content: "";
     width: 1%;
@@ -110,7 +151,8 @@ label::after{
     left: 300px;
     border: 10px solid white
 }
-.card::after{
+
+.card::after {
     position: absolute;
     content: "";
     width: 0;
@@ -121,6 +163,7 @@ label::after{
     border-right: 120px solid white;
     border-top: 120px solid #8b3030;
 }
+
 .awardd {
     appearance: none;
     width: 15px;
@@ -128,21 +171,54 @@ label::after{
     border: 1px solid white;
     background-color: #8b3030;
     cursor: pointer;
-     position: relative;
+    position: relative;
     margin: 0px 8px;
     vertical-align: middle;
     transition: all 0.3s ease;
-  }
- 
-  .awardd:checked::after {
-  content: "";
-      position: absolute;
-      top: 1px;
-      left: 1.5px;
-      width: 5px;
-      height: 11px;
-      background-color: transparent;
-      border: solid white;
-      border-width: 0 2px 2px 0;
-      transform: rotate(35deg);
-  }
+}
+
+.awardd:checked::after {
+    content: "dytdgc";
+    color: black;
+    font-size: 10px;
+    position: absolute;
+    top: 1px;
+    left: 1.5px;
+    width: 11px;
+    height: 11px;
+    background-color: transparent;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(35deg);
+}
+
+.photo {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    background-color: rgb(255, 255, 255);
+}
+
+input {
+    margin: 0px;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+form {
+    margin-right: 70px;
+}
+
+.par {
+    color: black;
+    font-size: 15px;
+}
