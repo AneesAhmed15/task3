@@ -1,12 +1,17 @@
 * {
-    margin: 10px 0px;
+   margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+
+    
 }
 
 body {
     font-family: "  Open Sans", sans-serif;
     background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .card {
@@ -41,7 +46,7 @@ input,
 textarea {
     background-color: #8b3030;
     color: white;
-    border: 1px solid white;
+    border: 1px solid grey;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -57,7 +62,10 @@ textarea::placeholder {
 .award5,
 .award6 {
     background-color: #8b3030;
+  
 }
+
+
 
 .input-type {
     display: flex;
@@ -74,6 +82,7 @@ button {
     height: 58px;
     width: 520px;
     font-size: 25px;
+    margin-top: 45px;
 }
 
 label {
@@ -92,23 +101,27 @@ textarea::placeholder {
 }
 
 .input-type input {
-    width: 592px;
-    height: 75px;
+    width: 500px;
+    height: 80px;
     padding: 3px;
+     border: 3px solid white;
+     border-radius: 5px;
 
 
 }
 
 .text {
-    margin-right: 78px;
+    margin-right: 80px;
     color: white;
     margin-left: 120px;
+
 }
 
 textarea {
     width: 592px;
     height: 85px;
     padding: 5px;
+   
 }
 
 .award {
@@ -143,13 +156,19 @@ pre::after {
 
 label::after {
     position: absolute;
-    content: "";
-    width: 1%;
-    height: 1%;
+    content: "+";
+      color: rgb(245, 221, 221);
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
     background-color: white;
     bottom: 0;
     left: 300px;
-    border: 8px solid white
+   
 }
 
 .card::after {
@@ -164,33 +183,33 @@ label::after {
     border-top: 120px solid #8b3030;
 }
 
-.awardd {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border: 1px solid white;
-    background-color: #8b3030;
-    cursor: pointer;
-    position: relative;
-    margin: 0px 8px;
-    vertical-align: middle;
-    transition: all 0.3s ease;
-}
 
-.awardd:checked::after {
-    content: "";
-    color: black;
-    font-size: 10px;
-    position: absolute;
-    top: 1px;
-    left: 1.5px;
-    width: 11px;
-    height: 11px;
-    background-color: transparent;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(35deg);
-}
+ .awardd{
+      position: relative;
+      width: 15px;
+      height: 15px;
+      appearance: none;
+      -webkit-appearance: none;
+      background-color: #8b3030;
+      border: 2px solid #a99f9f;
+      border-radius: 4px;
+        cursor: pointer;
+    margin-bottom: 0;
+    }
+        .awardd:checked::after {
+      content: "✔";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 15px;
+      color: black;
+      display: none;
+    }
+    .awardd:checked::after {
+      display: block;}
+
+
 
 .photo {
     margin-left: 20px;
@@ -221,4 +240,177 @@ form {
 .par {
     color: black;
     font-size: 15px;
+}.award1 {
+  background-color: #8b3030; /* dark red */
+  padding: 15px;
+ 
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;  
+}
+
+/* Top row with checkbox and right empty box */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+ 
+
+}
+
+/* Checkbox + label */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.awardd {
+  width: 22px;
+  height: 22px;
+  
+}
+
+/* Right empty placeholder box */
+.right-empty-box {
+  width: 150px;
+  height: 40px;
+  
+  border-radius: 50%;
+ 
+}
+
+/* Description container */
+.description-box {
+ margin-top: 10px
+}
+
+.description-box textarea {
+  width: 500px;
+  height: 120px;
+  background-color: #8b3030;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  
+  font-size: 16px;
+
+  resize: none;
+}
+.award-block {
+  background-color: #8b3030; 
+
+
+  
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Top row: checkbox + label + right empty circle */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.awardd {
+  width: 22px;
+  height: 22px;
+}
+
+/* Empty red-outlined circle on the right */
+.right-empty-box {
+  width: 40px;
+  height: 40px;
+ 
+  border-radius: 50%;
+}
+
+/* Textarea container */
+.description-box {
+  margin: 0;        
+ 
+
+}
+
+.description-box textarea {
+  width: 500px;
+  height: 120px;
+  background-color: #8b3030;
+  color: white;
+   border: 3px solid white;
+  border-radius: 5px;
+  
+  font-size: 16px;
+ 
+  
+}
+.award-block {
+  background-color: #8b3030;
+
+  color: white;
+  font-family: sans-serif;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+ ;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.awardd {
+  width: 22px;
+  height: 22px;
+ 
+}
+
+.right-empty-box {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+}
+
+.description-box {
+  
+ margin: 0;
+}
+
+.description-box textarea {
+  width: 500px;
+  height: 90px;
+  background-color: #8b3030;
+  color: white;
+   border: 3px solid white;
+  border-radius: 5px;
+  
+  font-size: 16px;
+ 
+
+}
+.award{
+    margin: 0px;
+    padding: 0px;
 }
