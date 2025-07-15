@@ -17,6 +17,7 @@ body {
 .card {
     background-color: #8b3030;
     position: relative;
+    
 }
 
 p {
@@ -103,9 +104,10 @@ textarea::placeholder {
 .input-type input {
     width: 500px;
     height: 80px;
-    padding: 3px;
+    padding: 10px;
      border: 3px solid white;
      border-radius: 5px;
+     font-size: medium;
 
 
 }
@@ -154,40 +156,11 @@ pre::after {
 
 }
 
-label::after {
-    position: absolute;
-    content: "+";
-      color: rgb(245, 221, 221);
-    font-size: 25px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    bottom: 0;
-    left: 300px;
-   
-}
-
-.card::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    background-color: white;
-    bottom: 0;
-    right: 0;
-    border-right: 120px solid white;
-    border-top: 120px solid #8b3030;
-}
-
-
  .awardd{
       position: relative;
       width: 15px;
       height: 15px;
+    margin-right: 11px;
       appearance: none;
       -webkit-appearance: none;
       background-color: #8b3030;
@@ -296,6 +269,7 @@ form {
   color: white;
   border: 3px solid white;
   border-radius: 5px;
+  padding-left: 20px;
   
   font-size: 16px;
 
@@ -369,8 +343,9 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ margin-bottom: 0;
+ margin-top: 0;
  
- ;
 }
 
 .checkbox-label {
@@ -413,4 +388,23 @@ form {
 .award{
     margin: 0px;
     padding: 0px;
+}
+.btn{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 3px solid white;
+ 
+  margin-bottom: 40px;
+}
+.card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+    border-right: 120px solid white;
+    border-top: 120px solid #8b3030;
 }
