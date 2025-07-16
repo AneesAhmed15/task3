@@ -1,6 +1,6 @@
 body{
     font-family: "  Open Sans", sans-serif;
-   
+   margin: 0px;
     width: 100%;
     
 }
@@ -13,6 +13,7 @@ h1 {
 h2 {
     margin-top: 0px;
     margin-bottom: 0px;
+  
 }
 p {
     font-size: 16px;
@@ -24,7 +25,9 @@ p {
     margin-left: 0px;
      background-color: #8B3030;
      padding-left: 20%;
-     height: 600px;
+     height: 700px;
+
+  
 }
 .clubs-row {
     display: flex;
@@ -35,7 +38,7 @@ p {
     gap: 30px;
 }
 .section-heading{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
 }
 
@@ -56,6 +59,7 @@ p {
 .club-subtitle{
     color: #000;
     padding-left: 15px;
+    margin-top: 0;
 }
 .section-heading{ 
   padding-bottom: 30px; 
@@ -89,5 +93,18 @@ p {
     border-top: 150px solid #8B3030;
     
 }
+ .triangle-button {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 0 solid transparent;
+      border-bottom: 50px solid #8B1A1A; /* Deep red */
+      position: relative;
+        cursor: pointer;
+    right: 65px;
+top: 65px;}
+        .triangle-button:hover {
+      filter: brightness(1.2);
+    }
 
 
